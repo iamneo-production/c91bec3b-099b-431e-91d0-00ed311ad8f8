@@ -1,13 +1,22 @@
 package com.examly.springapp.UserModel;
-
-@Entity
-@Table(name="company")
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+@Entity(name="company")
 public class Company {
-    @Id
+	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	long id;
 	String companyname;
 	String companyaddress;
+	String companyemailid;
+	public String getCompanyemailid() {
+		return companyemailid;
+	}
+	public void setCompanyemailid(String companyemailid) {
+		this.companyemailid = companyemailid;
+	}
 	long mobilenumber;
 	public String getCompanyname() {
 		return companyname;
@@ -39,6 +48,7 @@ public class Company {
 	public void setCompanyName(String companyname) {
 		this.companyname = companyname;
 	}
-
-    
+	
+		
 }
+
