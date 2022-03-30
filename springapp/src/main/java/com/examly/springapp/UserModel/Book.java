@@ -1,29 +1,39 @@
 package com.examly.springapp.UserModel;
-
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 @Entity
 @Table(name="book")
 public class Book {
-    @Id
+	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	long id;
-	String booking_id,payment_type,name,email,book_date;
+	String payment_type,name,email,book_date;
+	long user_id,mobile;
+	double price;
+	long hall_id;
+	public long getHall_id() {
+		return hall_id;
+	}
+	public void setHall_id(long hall_id) {
+		this.hall_id = hall_id;
+	}
 	public String getBook_date() {
 		return book_date;
 	}
 	public void setBook_date(String book_date) {
 		this.book_date = book_date;
 	}
-	long user_id,mobile;
-	double price;
+	
 	public double getPrice() {
 		return price;
 	}
 	public void setPrice(double price) {
 		this.price = price;
 	}
-	@OneToOne(fetch=FetchType.LAZY)
-    @JoinColumn(name ="halldetails_id")
-	HallDetails halldetails;
+	
 	public String getName() {
 		return name;
 	}
@@ -42,24 +52,14 @@ public class Book {
 	public void setMobile(long mobile) {
 		this.mobile = mobile;
 	}
-	public HallDetails getHalldetails() {
-		return halldetails;
-	}
-	public void setHalldetails(HallDetails halldetails) {
-		this.halldetails = halldetails;
-	}
+	
 	public long getId() {
 		return id;
 	}
 	public void setId(long id) {
 		this.id = id;
 	}
-	public String getBooking_id() {
-		return booking_id;
-	}
-	public void setBooking_id(String booking_id) {
-		this.booking_id = booking_id;
-	}
+	
 	public String getPayment_type() {
 		return payment_type;
 	}
@@ -73,5 +73,5 @@ public class Book {
 		this.user_id = user_id;
 	}
 	
-    
+
 }
