@@ -1,5 +1,7 @@
 
 package com.examly.springapp;
+
+package com.examly.springapp;
 package com.examly.springapp; 
 
 import org.springframework.boot.SpringApplication;
