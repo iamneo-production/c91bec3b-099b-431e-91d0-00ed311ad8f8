@@ -1,51 +1,37 @@
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import AdminDashboard from "./Admin-side/admin-dashboard/AdminDashboard";
+import AdminBookings from "./Admin-side/admin-bookings/AdminBookings";
 
-import React from 'react';
-import './App.css';
-import {Link} from 'react-router-dom';
+import Admin from "./auth/login/Admin";
+import User from "./auth/login/User";
+
+import UserDashboard from "./User-side/user-dashboard/UserDashboard"
+
+import UserBookings from "./User-side/user-bookings/UserBookings"
+import UserCompanyDetails from "./User-side/user-dashboard/UserCompanyDetails"
+
 function App(){
-  return(
-    <div id='signupBox'>
-    <form id='submain'>
-      <h1 id='heading'>SIGN UP</h1>
-      <input id="email"type='Email' placeholder='Enter Email'required></input><br></br>
-      <input id="password"type='password' placeholder='Enter Password'Size="8-13"required></input><br></br>
-      <input id="mobilenumber"type='text' placeholder='Enter Mobile Number'
-        pattern="[0-9]{10}" required></input><br></br>
-      <select id="userrole" >
-        <option>User</option>
-        <option>Admin</option>
-      </select><br></br>
-      <input id='username'type='text' placeholder='Enter Username'required></input><br></br>
-      <input id='age'type='number' placeholder='Enter Age'required></input><br></br>
-      <input id='submitButton'type='Submit'></input>
-      <p id='link'>Go to Login<Link id="loginLink"to='/login'>Click Here</Link></p>
-    </form> 
-  </div>
-  )
-}
-export default App;
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return(
+     
+             <BrowserRouter> 
+              <Routes>
+                <Route exact path='/' element={<User/>} />
+                <Route path='/admin/login' element={<Admin/>} />
+                <Route path='/user/dashboard' element={<UserDashboard/>}/>
+                
+                <Route path='/user/bookings' element={<UserBookings/>} />
+                <Route path='/admin/dashboard' element={<AdminDashboard/>}/>
+                
+                <Route path='/admin/bookings' element={<AdminBookings/>}/>
+                <Route path='/user/companyDetail' element={<UserCompanyDetails/>} />
+              </Routes>
+          
+            </BrowserRouter>
+            
+          
+    )
+  
 }
-
 export default App;
