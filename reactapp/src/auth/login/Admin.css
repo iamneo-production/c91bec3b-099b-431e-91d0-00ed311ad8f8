@@ -1,0 +1,91 @@
+ul{
+    margin: 0%;
+    list-style-type: none;
+    display: flex;
+    padding-left: 0%;
+  }
+  #container{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    padding: 100px 0px 90px 0px;
+  }
+  #loginBox{
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    width: fit-content;
+    box-shadow: 5px 5px 5px 5px lightgrey;
+    border-radius: 10px;
+    background-color: rgb(240, 240, 240);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 40px;
+  }
+  #userTab{
+    
+    background-color: rgb(240, 240, 240);
+    padding: 10px 80px 10px 80px;
+    font-size: 25px;
+    border-bottom-right-radius: 10px;
+    text-decoration: none;
+    color: rgb(70, 70, 70);
+    display: flex;
+  }
+  #adminTab{
+    
+    display: flex;
+    background-color:lightgrey;
+    font-size: 25px;
+    padding: 10px 80px 10px 80px;
+    border-bottom-left-radius: 10px;
+    
+    text-decoration: none;
+    color: rgb(70, 70, 70);
+  }
+  h2{
+      font-weight: 500;
+    }
+    #email{
+      padding: 10px;
+      border: 1px solid lightgrey;
+      border-radius: 10px;
+      background-color: lightgrey;
+      width: 320px;
+    }
+    
+    #password{
+      padding: 10px;
+      border: 1px solid lightgrey;
+      border-radius: 10px;
+      background-color: lightgrey;
+      width: 320px;
+    }
+    
+    #emailerrorMessage{
+        color: red;
+        font-size: 11px;
+        margin-top: 0%;
+        margin-bottom: 0px;
+        margin-right: 250px;
+    }
+    #passworderrorMessage{
+      color: red;
+      font-size: 11px;
+      margin-top: 0%;
+      margin-bottom: 0px;
+      margin-right: 230px;
+    }
+   
+    #submitButton{
+      background-color: palevioletred;
+      width: 200px;
+      padding: 8px 30px 8px 30px;
+      border-radius: 10px;
+      border: 1px solid grey;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    
+    #submitButton:active{
+      background-color: rgb(231, 71, 183);
+    }

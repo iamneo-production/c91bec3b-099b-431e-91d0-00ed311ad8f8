@@ -1,0 +1,40 @@
+#userDashboard{
+    margin-top: 70px;
+}
+#dashboard-table{
+    
+    width: 85%;
+    border-collapse: collapse;
+    margin-left:95px;
+    margin-bottom: 100px;
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius:20px;
+}
+
+
+
+#dashboard-tr{
+    background-color: lightgray;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+
+#dashboard-td{
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+#dashboard-table tr:nth-child(even){
+    background-color: rgb(232, 232, 232);
+}
+
+
+#dashboard-table tr:hover{
+    background-color:white;
+    border:1px solid grey;
+} 
