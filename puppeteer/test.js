@@ -7,6 +7,7 @@ const puppeteer = require('puppeteer');
     const page = await browser.newPage();
     try{
     await page.goto('https://8081-adfaaffabfbbeffacfefaffeafcdbeeafffede.examlyiopb.examly.io/login');
+    await page.goto('https://8081-eebeafbcddaeffffacfefaffeafcdbeeafffede.examlyiopb.examly.io/login');
     await page.setViewport({
       width:1200,
       height:800,
@@ -49,6 +50,7 @@ const puppeteer = require('puppeteer');
     const page = await browser.newPage();
     try {
       await page.goto('https://8081-adfaaffabfbbeffacfefaffeafcdbeeafffede.examlyiopb.examly.io/login');
+      await page.goto('https://8081-eebeafbcddaeffffacfefaffeafcdbeeafffede.examlyiopb.examly.io/login');
     await page.setViewport({
       width:1200,
       height:800,
@@ -89,6 +91,7 @@ const puppeteer = require('puppeteer');
     const page = await browser.newPage();
     try {
       await page.goto('https://8081-adfaaffabfbbeffacfefaffeafcdbeeafffede.examlyiopb.examly.io/login');
+      await page.goto('https://8081-eebeafbcddaeffffacfefaffeafcdbeeafffede.examlyiopb.examly.io/login');
     await page.setViewport({
       width:1200,
       height:800,
@@ -129,6 +132,7 @@ const puppeteer = require('puppeteer');
     const page = await browser.newPage();
     try {
       await page.goto('https://8081-adfaaffabfbbeffacfefaffeafcdbeeafffede.examlyiopb.examly.io/superadmin/login');
+      await page.goto('https://8081-eebeafbcddaeffffacfefaffeafcdbeeafffede.examlyiopb.examly.io/superadmin/login');
     await page.setViewport({
       width:1200,
       height:800,
@@ -168,6 +172,7 @@ const puppeteer = require('puppeteer');
     
     try {
       await page.goto('https://8081-adfaaffabfbbeffacfefaffeafcdbeeafffede.examlyiopb.examly.io/user/dashboard');
+      await page.goto('https://8081-eebeafbcddaeffffacfefaffeafcdbeeafffede.examlyiopb.examly.io/user/dashboard');
       await page.setViewport({
         width:1200,
         height:800,

@@ -1,0 +1,81 @@
+#userNavbar{
+    overflow: hidden;
+    background-color: rgb(233, 34, 100);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height:50px;
+    left: 0;
+    color: white;
+    display: flex;
+  }
+
+  #user-logo{
+      position: relative;
+      display: flex;
+      padding: 0px 90px 0px 30px;
+      font-size: 20px;
+      margin-top: 10px;
+  }
+
+  #userDashboardLink{
+      color: white;
+      font-size: 18px;
+      text-decoration: none;
+      padding: 10px;
+      position: relative;
+      display: flex;
+      border-radius: 5px;
+  }
+  #userProfileLink{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    border-radius: 5px;
+}
+
+#userBookingLink{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    border-radius: 5px;
+}
+
+  #userLogoutButton{
+      margin-left: 600px;
+      color: white;
+      font-size: 18px;
+      text-decoration: none;
+      padding: 10px;
+      position: relative;
+      display: inline-flex;
+      border-radius: 5px;
+  }
+
+  #userDashboardLink:hover{
+      background-color: rgb(260, 20, 90);
+      color: black;
+  }
+
+  #userBookingLink:hover{
+    background-color: rgb(260, 20, 90);
+    color: black;
+}
+
+#userProfileLink:hover{
+    background-color: rgb(260, 20, 90);
+    color: black;
+}
+  
+  #userLogoutButton:hover{
+      background-color: rgb(260, 20, 90);
+      color: black;
+  }
+  
+ 

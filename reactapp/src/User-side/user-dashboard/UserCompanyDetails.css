@@ -1,0 +1,45 @@
+#userCompanyDetail{
+    margin-top:70px;
+}
+
+#userCompanyDetail-table1{
+    width: 85%;
+    margin-left:95px;
+    border-collapse: collapse;
+    background-color:rgb(232,232,232);
+    border: 1px solid white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    border-radius:20px;
+}
+
+#userCompanyDetail-td-name{
+    padding:30px;
+    font-size:25px;
+}
+
+#userCompanyDetail-td1{
+    padding:10px;
+}
+
+#userCompanyDetail-table2{
+    width: 85%;
+    margin-left:95px;
+    border-collapse: collapse;
+    background-color:rgb(232,232,232);
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    
+    margin-top:100px;
+}
+#userCompanyDetail-tr{
+    border:10px solid white;
+    border-radius:20px;
+}
+
+
+#userCompanyDetail-td2{
+    padding:20px;
+    font-size:20px;
+}

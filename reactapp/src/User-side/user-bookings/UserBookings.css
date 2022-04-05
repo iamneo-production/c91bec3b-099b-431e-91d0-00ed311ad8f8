@@ -1,0 +1,38 @@
+#userBookingBody{
+    margin-top: 70px;
+}
+#bookings-table{
+    width: 85%;
+    border-collapse: collapse;
+    margin-left:95px;
+    margin-bottom: 100px;
+    border: 1px solid white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+#bookings-th{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    background-color: rgb(202, 86, 125);
+    color: white;
+    
+}
+
+#bookings-tr{
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+
+#bookings-td{
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#bookings-table tr:nth-child(even){
+    background-color: rgb(222, 222, 222);
+}
