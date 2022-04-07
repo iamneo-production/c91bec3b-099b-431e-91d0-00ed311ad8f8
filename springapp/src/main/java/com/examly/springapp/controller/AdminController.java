@@ -48,10 +48,9 @@ public class AdminController {
     }
 
     @GetMapping ("/dashboard")
-    public List<Hall> getHallByCompany(@RequestParam HashMap<String, String> request) {
-        String companyId = request.get("com_id");
-        return hallService.getHallByCompany(companyId);
-    }
+    public List<Hall> getByAdminId(@RequestParam  String adminId) {
+		return hallService.getHallByAdminId(adminId);
+	}
 
     @PostMapping("/addHall")
     public Hall createhall(@RequestBody Hall hall) {

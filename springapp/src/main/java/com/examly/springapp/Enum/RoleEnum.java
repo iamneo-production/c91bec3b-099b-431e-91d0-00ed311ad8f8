@@ -1,4 +1,4 @@
-package com.examly.springapp;
+package com.examly.springapp.Enum;
 
 public enum RoleEnum {
 

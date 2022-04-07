@@ -27,9 +27,9 @@ public class HallService {
 		return hallRepo.findAll();
 	}
 
-	public List<Hall> getHallByCompanyId(String companyId) {
+	public List<Hall> getHallByAdminId(String adminId) {
 
-		return hallRepo.getHallByCompanyId(companyId);
+		return hallRepo.getHallByAdminId(adminId);
 	}
 
 	public List<Company> getAllCompany() {

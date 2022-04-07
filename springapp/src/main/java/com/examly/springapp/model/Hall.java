@@ -1,10 +1,6 @@
 package com.examly.springapp.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "hall")
@@ -19,7 +15,16 @@ public class Hall {
     private String addedOn;
     private String companyId;
     private String bookuser;
+    private boolean status;
+    
 
+    public boolean isStatus() {
+        return status;
+    }
+
+    public void setStatus(boolean status) {
+        this.status = status;
+    }
 
     public Long getId() {
         return id;
@@ -28,38 +33,6 @@ public class Hall {
     public void setId(Long id) {
         this.id = id;
     }
-
-    public String getAddedOn() {
-        return addedOn;
-    }
-
-    public void setAddedOn(String addedOn) {
-        this.addedOn = addedOn;
-    }
-
-    public String getCompanyId() {
-        return companyId;
-    }
-
-    public void setCompanyId(String companyId) {
-        this.companyId = companyId;
-    }
-
-
-    public void setHall(String bookuser) {
-    }
-
-
-    public String getBookuser() {
-        return bookuser;
-    }
-
-    public void setBookuser(String bookuser) {
-        this.bookuser = bookuser;
-    }
-
-
-
 
     public String getEventdate() {
         return eventdate;
@@ -93,5 +66,30 @@ public class Hall {
         this.description = description;
     }
 
+    public String getAddedOn() {
+        return addedOn;
+    }
+
+    public void setAddedOn(String addedOn) {
+        this.addedOn = addedOn;
+    }
+
+    public String getCompanyId() {
+        return companyId;
+    }
+
+    public void setCompanyId(String companyId) {
+        this.companyId = companyId;
+    }
+
+    public String getBookuser() {
+        return bookuser;
+    }
+
+    public void setBookuser(String bookuser) {
+        this.bookuser = bookuser;
+    }
 }
+
+
 

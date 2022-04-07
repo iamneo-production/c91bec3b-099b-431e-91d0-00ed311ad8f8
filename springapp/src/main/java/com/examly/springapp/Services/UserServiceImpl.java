@@ -6,7 +6,7 @@ import java.util.Collection;
 import java.util.stream.Collectors;
 
 import com.examly.springapp.Repository.UserRepository;
-import com.examly.springapp.RoleEnum;
+import com.examly.springapp.Enum.RoleEnum;
 import com.examly.springapp.model.Role;
 import com.examly.springapp.model.User;
 import com.examly.springapp.dto.UserRegistrationDto;

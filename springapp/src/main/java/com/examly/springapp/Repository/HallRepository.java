@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface HallRepository extends JpaRepository<Hall, Long> {
-	List<Hall> getHallByCompanyId(String companyId);
+	List<Hall> getHallByAdminId(String adminId);
 
 	List<Hall> getByBookuser(String bookuser);
 

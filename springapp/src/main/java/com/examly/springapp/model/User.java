@@ -32,6 +32,8 @@ public class User {
 	private String email;
 	
 	private String password;
+
+	private String age;
 	
 	@ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
 	@JoinTable(
@@ -60,6 +62,12 @@ public class User {
 	}
 	public void setId(Long id) {
 		this.id = id;
+	}
+	public String getAge() {
+		return age;
+	}
+	public void setAge(String age) {
+		this.age = age;
 	}
 	public String getFirstName() {
 		return firstName;

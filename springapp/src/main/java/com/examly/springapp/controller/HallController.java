@@ -35,8 +35,8 @@ public class HallController {
 	}
 
 	@GetMapping("/halls")
-	public List<Hall> getByCompanyId(@RequestParam  String companyId) {
-		return hallService.getHallByCompanyId(companyId);
+	public List<Hall> getByAdminId(@RequestParam  String adminId) {
+		return hallService.getHallByAdminId(adminId);
 	}
 
 
