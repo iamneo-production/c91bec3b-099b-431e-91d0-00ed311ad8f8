@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 @RestController
-@RequestMapping("/registration")
+@RequestMapping("/user")
 public class SignUpController {
 
 	private UserService userService;
@@ -15,10 +15,6 @@ public class SignUpController {
 		this.userService = userService;
 	}
 	
-//	@ModelAttribute("user")
-//    public UserRegistrationDto userRegistrationDto() {
-//        return new UserRegistrationDto();
-//    }
 	
 	
 	@PostMapping("/signUp")
@@ -26,9 +22,5 @@ public class SignUpController {
 		userService.save(registrationDto);
 		return "redirect:/login";
 	}
-
-//	@GetMapping("/getSample")
-//	public String getSample(){
-//		return "Hello";
-//	}
+	
 }

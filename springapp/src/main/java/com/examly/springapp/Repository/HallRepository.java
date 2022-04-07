@@ -11,8 +11,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface HallRepository extends JpaRepository<Hall, Long> {
-	@Query("Select hall FROM Hall hall WHERE hall.companyId=:com_id")
-	List<Hall> getByCompanyId(@Param("com_id")String hall_id);
+	List<Hall> getHallByCompanyId(String companyId);
 
 	List<Hall> getByBookuser(String bookuser);
 

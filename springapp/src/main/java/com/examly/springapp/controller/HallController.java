@@ -35,10 +35,10 @@ public class HallController {
 	}
 
 	@GetMapping("/halls")
-	public List<Hall> getHallByCompany(@RequestParam  HashMap<String, String> request) {
-		String companyId = request.get("com_id");
-		return hallService.getHallByCompany(companyId);
+	public List<Hall> getByCompanyId(@RequestParam  String companyId) {
+		return hallService.getHallByCompanyId(companyId);
 	}
+
 
 	@GetMapping("/hallDetails")
 	public Hall getHallById(@RequestParam Long id) throws Exception {
